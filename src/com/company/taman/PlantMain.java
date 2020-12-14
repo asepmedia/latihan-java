@@ -24,11 +24,26 @@ public class PlantMain {
     }
 
     public static void buatTanaman(Scanner scanner) {
+        System.out.print("Masukkan jenis tanaman : ");
+        int jenis = scanner.nextInt();
+
+        Plant tanaman = null;
+
+        if(jenis == 0) {
+            tanaman = new Anggrek();
+        } else if(jenis == 1) {
+            tanaman = new Mawar();
+        } else if(jenis == 2) {
+            tanaman = new Melati();
+        }
+
+        System.out.println("Anda memilih tanaman " + tanaman.getJenis());
+
         System.out.print("Masukkan jumlah tanaman : ");
         int jumlahTanaman = scanner.nextInt();
 
         for(int i = 0; i < jumlahTanaman; i++) {
-            taman.addPlant();
+            taman.addPlant(tanaman);
         }
 
         buatDaftarOpsi(scanner);

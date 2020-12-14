@@ -13,11 +13,11 @@ public class Garden {
         mGardenName = mGardenName;
     }
 
-    void addPlant() {
+    void addPlant(Plant plant) {
         if(mPlantArr.size() == 10) {
             System.out.println("Taman sudah memiliki 10 Tanaman");
         } else {
-            mPlantArr.add(new Plant());
+            mPlantArr.add(plant);
         }
     }
 

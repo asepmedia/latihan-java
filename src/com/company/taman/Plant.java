@@ -7,6 +7,8 @@ public class Plant {
 
     int jumlahPupuk = 0;
 
+    String jenis;
+
     void beriAir(int air) {
         jumlahAir += air;
         tumbuh();
@@ -49,4 +51,7 @@ public class Plant {
 
     }
 
+    public String getJenis() {
+        return jenis;
+    }
 }
