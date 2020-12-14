@@ -50,9 +50,9 @@ public class PlantMain {
     }
 
     public static void buatDaftarOpsi(Scanner scanner) {
-        System.out.println("==============================================================================");
-        System.out.println("1. Siram Tanaman, 2. Beri Pupuk, 3. Cek Panen, 4. Panen, 5. Tanam, 6. Cek Poin");
-        System.out.println("==============================================================================");
+        System.out.println("=========================================================================================");
+        System.out.println("1. Siram Tanaman, 2. Beri Pupuk, 3. Cek Panen, 4. Panen, 5. Tanam, 6. Cek Poin, 7. Keluar");
+        System.out.println("=========================================================================================");
         System.out.print("Pilih opsi di atas : ");
         int opsi = scanner.nextInt();
 
@@ -68,6 +68,8 @@ public class PlantMain {
             buatTanaman(scanner);
         } else if(opsi == 6) {
             cekPoin(scanner);
+        } else if(opsi == 7) {
+            return;
         } else {
             System.out.println("Opsi tidak ditemukan");
             buatDaftarOpsi(scanner);
